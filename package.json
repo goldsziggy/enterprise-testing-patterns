@@ -1,0 +1,38 @@
+{
+  "name": "enterprise-testing-patterns",
+  "version": "1.0.0",
+  "description": "A repo containing testing samples used in my blog post",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index",
+    "dev": "nodemon --watch src src/index",
+    "test": "jest __tests__/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goldsziggy/enterprise-testing-patterns.git"
+  },
+  "keywords": [
+    "testing",
+    "patterns"
+  ],
+  "author": "Matthew Zygowicz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goldsziggy/enterprise-testing-patterns/issues"
+  },
+  "homepage": "https://github.com/goldsziggy/enterprise-testing-patterns#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "body-parser": "^1.19.0",
+    "bunyan": "^1.8.14",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5"
+  },
+  "devDependencies": {
+    "jest": "^26.5.3",
+    "nock": "^13.0.4",
+    "nodemon": "^2.0.5",
+    "supertest": "^5.0.0"
+  }
+}
