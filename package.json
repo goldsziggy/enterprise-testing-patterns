@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index",
     "dev": "nodemon --watch src src/index",
-    "test": "jest __tests__/"
+    "test": "jest --env=node --runInBand __tests__/"
   },
   "repository": {
     "type": "git",

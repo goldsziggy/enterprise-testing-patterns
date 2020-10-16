@@ -13,8 +13,6 @@ describe('Mysql tests', () => {
   })
 
   it('Should run the query from inputOne', async (done) => {
-    let isSQLValidAndCorrect = false
-
     mockPool.query.mockImplementation((sql) => {
       // place your mock data here for testing more complex returns!
       return [1, 2]
@@ -26,10 +24,7 @@ describe('Mysql tests', () => {
     done()
   })
   it('Should run the query from inputTwo', async (done) => {
-    let isSQLValidAndCorrect = false
-
     mockPool.query.mockImplementation((sql) => {
-      console.log(sql)
       // place your mock data here for testing more complex returns!
       return [1, 2]
     })
