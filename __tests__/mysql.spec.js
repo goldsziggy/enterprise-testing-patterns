@@ -1,3 +1,6 @@
+/**
+ * This test file shows how you can leverage Jest mocks to properly mock out a mysql connection.
+ */
 const { querySomething } = require('../src/mysql/sql')
 const mockPool = require('../src/mysql/connection')
 

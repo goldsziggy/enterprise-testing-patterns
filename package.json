@@ -27,6 +27,10 @@
     "body-parser": "^1.19.0",
     "bunyan": "^1.8.14",
     "express": "^4.17.1",
+    "fast-xml-parser": "^3.17.4",
+    "he": "^1.2.0",
+    "ldapts": "^2.8.1",
+    "lodash": "^4.17.20",
     "mysql2": "^2.2.5"
   },
   "devDependencies": {

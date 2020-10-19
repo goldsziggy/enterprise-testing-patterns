@@ -4,12 +4,11 @@ const postRoot = async (req, res) => {
   const { body, logger } = req
   logger.info({ body }, 'Request Received')
 
-  const { filmId } = body
   try {
-    const val = await services.genericRestCall(filmId, logger)
+    const films = await services.getAllFIlms(logger)
+    const film = await services.getByFilmId(films[0].id, logger)
 
-    console.log({ val })
-    res.status(200).json({ foo: 'bar' })
+    res.status(200).json(film)
   } catch (e) {
     logger.error('caught error')
     res.status(500).json({ error: true })
